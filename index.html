@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Ephraim Ekeno Ejore">
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Learning Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="course-content.html">Course Content</a></li>
+            <li><a href="leader-board.html">Leaderboard</a></li>
+			<li><a href="selected-courses.html">Selected Courses</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Login Form -->
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Course Selection Form -->
+        <section id="course-selection-section">
+            <h2>Course Selection</h2>
+            <form id="course-selection-form">
+                <label><input type="checkbox" value="Introduction to HTML"> Introduction to HTML</label>
+                <button type="button" onclick="addCourse()">Add</button><br>
+                <label><input type="checkbox" value="CSS Fundamentals"> CSS Fundamentals</label>
+                <button type="button" onclick="addCourse()">Add</button><br>
+                <label><input type="checkbox" value="JavaScript Basics"> JavaScript Basics</label>
+                <button type="button" onclick="addCourse()">Add</button><br>
+                <!-- Add more courses as needed -->
+            </form>
+        </section>
+
+        <!-- Selected Courses -->
+        <section id="selected-courses-section">
+            <h2>Selected Courses</h2>
+            <ul id="selected-courses-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Learning Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Light gray background */
+        }
+
+        header {
+            background-color: #333; /* Dark gray header background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            color: #17a2b8; /* Teal */
+        }
+
+        nav {
+            background-color: #007bff; /* Blue navigation background */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff; /* White link color */
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .welcome-message {
+            background-color: #fff; /* White section background */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333; /* Dark gray footer background */
+            color: #fff; /* White text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        p {
+            color: #6c757d; /* Gray text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+                <li><a href="/course-content">Course Content</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="welcome-message">
+            <h2>Hello, <span id="user-fullname"></span>!</h2>
+            <p>Welcome to your personalized dashboard.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your LMS</p>
+    </footer>
+
+    <!-- Include your client-side JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
